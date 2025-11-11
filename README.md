@@ -1,5 +1,7 @@
 # Crowdsourcing Cognitive Maps for Generative AI
 
+Homepage: https://sihangqiu.com/cognitive-map
+
 We're introducing the concept of the **Cognitive Map** to address current limitations of AI's spatial intelligence.
 
 Humans understand space through the construction of "cognitive maps" - internal mental representations of the spaces we inhabit. These maps are semantic in nature, providing a rich and meaningful understanding of the space.
