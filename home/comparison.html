@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scene Comparison</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            /* background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d); */
+            background: white;
+            color: black;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .comparison-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        
+        .image-container {
+            flex: 1;
+            min-width: 300px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .image-container:hover {
+            transform: translateY(-5px);
+        }
+        
+        .image-title {
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        
+        .image-wrapper {
+            position: relative;
+            width: 100%;
+            /* height: 400px; */
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        .image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .image-wrapper:hover img {
+            transform: scale(1.03);
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .btn {
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-left {
+            background: linear-gradient(to right, #3498db, #2980b9);
+            color: white;
+        }
+        
+        .btn-right {
+            background: linear-gradient(to right, #e74c3c, #c0392b);
+            color: white;
+        }
+        
+        .btn-equal {
+            background: linear-gradient(to right, #2ecc71, #27ae60);
+            color: white;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .btn:active {
+            transform: translateY(1px);
+        }
+        
+        .result {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            font-size: 1.2rem;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        @media (max-width: 768px) {
+            .comparison-container {
+                flex-direction: column;
+            }
+            
+            .image-container {
+                min-width: 100%;
+            }
+            
+            .controls {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- <h1>Image Comparison Tool</h1> -->
+            <p class="subtitle">Please <b>carefully compare</b> the following two AI-generated images of coffee shops.</p>
+            <p class="subtitle">Imagine you are a customer, a barista, or the owner of the coffee shop. </p>
+            <br/>
+            <p>We are NOT asking you to compare which decoration style you prefer. Instead, we want to know your thoughts on the contextual richness, spatial coherence, and functional plausibility. </p>
+        </header>
+        
+        <div class="comparison-container">
+            <div class="image-container">
+                <div class="image-title">Image A</div>
+                <div class="image-wrapper">
+                    <img id="image-left" src="" alt="Left Image">
+                </div>
+            </div>
+            
+            <div class="image-container">
+                <div class="image-title">Image B</div>
+                <div class="image-wrapper">
+                    <img id="image-right" src="" alt="Right Image">
+                </div>
+            </div>
+        </div>
+        
+        <div class="controls" id="q1">
+            <p style="width:500px"><strong>Contextual Richness:</strong> Which one has more elements and details that are meaningful and reasonable for a coffee shop?</p>
+            <button class="btn btn-left" id="choose-left-1">Choose Image A</button>
+            <button class="btn btn-equal" id="choose-equal-1">Both Are Equal</button>
+            <button class="btn btn-right" id="choose-right-1">Choose Image B</button>
+        </div>
+
+        <div class="controls" id="q2">
+            <p style="width:500px"><strong>Spatial Coherence:</strong> Which layout organizes the objects in a more logical and functional way for a coffee shop?</p>
+            <button class="btn btn-left" id="choose-left-2">Choose Image A</button>
+            <button class="btn btn-equal" id="choose-equal-2">Both Are Equal</button>
+            <button class="btn btn-right" id="choose-right-2">Choose Image B</button>
+        </div>
+
+        <div class="controls" id="q3">
+            <p style="width:500px"><strong>Functional Plausibility:</strong> Imagine the activities you would need to perform in the coffee shop. Which one better supports your activities?</p>
+            <button class="btn btn-left" id="choose-left-3">Choose Image A</button>
+            <button class="btn btn-equal" id="choose-equal-3">Both Are Equal</button>
+            <button class="btn btn-right" id="choose-right-3">Choose Image B</button>
+        </div>
+
+        <div class="result" id="code"></div>
+    
+    </div>
+
+    <script src="./jquery.js"></script>
+    <script>
+        // Get URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        // const ccm = urlParams.get('ccm');
+        // const noccm = urlParams.get('noccm');
+        const ccm = Math.floor(Math.random() * 5) + 1;
+        const noccm = Math.floor(Math.random() * 5) + 1;
+        var userid = urlParams.get('PROLIFIC_PID');
+        userid = (userid == null) ? Date.now().toString(36) + Math.random().toString(36).substr(3, 12):userid;
+        var completion_code = "TEST_CODE";
+        var answers = ['', '', ''];
+    
+        // Set default images if parameters are not provided
+        var leftImage = (ccm == null)?'./imgs/ccm1.jpg':'./imgs/ccm'+ccm+'.jpg';
+        var rightImage = (ccm == null)?'./imgs/noccm1.jpg':'./imgs/noccm'+noccm+'.jpg';
+
+        const randomInt = Math.floor(Math.random() * 2);
+        if ( randomInt == 1 ) { var tmp = leftImage; leftImage = rightImage; rightImage = tmp; } // swap
+        
+        // Set image sources
+        document.getElementById('image-left').src = leftImage;
+        document.getElementById('image-right').src = rightImage;
+        
+        var show_code = function() {
+            document.getElementById('code').innerHTML = "Survey completion code: <b>"+completion_code+"</b>";
+        };
+
+        var submit_answer = function() {
+            for ( var i = 0 ; i < 3 ; i ++ ) if ( answers[i]=='' ) return;
+            console.log(answers);
+            var res = {
+                userid: userid,
+                answers: answers,
+                left: leftImage,
+                right: rightImage
+            };
+            console.log(res);
+
+            // if ( userid.length > 0 ) {
+            //     jQuery.ajax({
+            //         url: "https://XXX",
+            //         type: "POST",
+            //         crossDomain: true,
+            //         data: {data:JSON.stringify(res)},
+            //         dataType: "json",
+            //         success: show_code(),
+            //         error:function(e){}
+            //     });
+            // }
+            window.open("https://app.prolific.co/submissions/complete?cc=" + completion_code, '_blank').focus();
+        };
+
+        var fade_out = function(element) {
+            element.style.transition = 'opacity 0.5s ease';
+            element.style.opacity = '0';
+            setTimeout(() => {
+                element.style = "display:none";
+            }, 500); // Match the transition duration
+        }
+
+        // Add event listeners to buttons
+        // CHOOSE LEFT
+        document.getElementById('choose-left-1').addEventListener('click', function() {
+            answers[0] = leftImage + ' > ' + rightImage;
+            fade_out(document.getElementById('q1'));
+            submit_answer();
+        });
+
+        document.getElementById('choose-left-2').addEventListener('click', function() {
+            answers[1] = leftImage + ' > ' + rightImage;
+            fade_out(document.getElementById('q2'));
+            submit_answer();
+        });
+
+        document.getElementById('choose-left-3').addEventListener('click', function() {
+            answers[2] = leftImage + ' > ' + rightImage;
+            fade_out(document.getElementById('q3'));
+            submit_answer();
+        });
+
+        // CHOOSE EQUAL
+        document.getElementById('choose-equal-1').addEventListener('click', function() {
+            answers[0] = leftImage+' = '+rightImage;
+            fade_out(document.getElementById('q1'));
+            submit_answer();
+        });
+
+        document.getElementById('choose-equal-2').addEventListener('click', function() {
+            answers[1] = leftImage+' = '+rightImage;
+            fade_out(document.getElementById('q2'));
+            submit_answer();
+        });
+
+        document.getElementById('choose-equal-3').addEventListener('click', function() {
+            answers[2] = leftImage+' = '+rightImage;
+            fade_out(document.getElementById('q3'));
+            submit_answer();
+        });
+
+        // CHOOSE RIGHT
+        document.getElementById('choose-right-1').addEventListener('click', function() {
+            answers[0] = rightImage + ' > ' + leftImage;
+            fade_out(document.getElementById('q1'));
+            submit_answer();
+        });
+
+        document.getElementById('choose-right-2').addEventListener('click', function() {
+            answers[1] = rightImage + ' > ' + leftImage;
+            fade_out(document.getElementById('q2'));
+            submit_answer();
+        });
+
+        document.getElementById('choose-right-3').addEventListener('click', function() {
+            answers[2] = rightImage + ' > ' + leftImage;
+            fade_out(document.getElementById('q3'));
+            submit_answer();
+        });
+    </script>
+</body>
+</html>

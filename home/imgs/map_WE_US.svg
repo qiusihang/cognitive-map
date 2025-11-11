@@ -1,0 +1,40 @@
+<svg width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" style="border: 1px solid #ccc; font-family: Inter, sans-serif;">
+<!-- Background -->
+<rect width="800" height="800" fill="#f0f4f8" />
+<line x1="500.5772346832172" y1="389.62333805420286" x2="424.2391935725209" y2="366.8014320018339" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<line x1="500.5772346832172" y1="389.62333805420286" x2="537.1450481544503" y2="500.0851962874866" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<line x1="500.5772346832172" y1="389.62333805420286" x2="355.880052329518" y2="294.229100423035" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<line x1="500.5772346832172" y1="389.62333805420286" x2="446.8520142996367" y2="517.4755780833898" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<line x1="500.5772346832172" y1="389.62333805420286" x2="352.3486766386615" y2="424.14432815329496" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<line x1="424.2391935725209" y1="366.8014320018339" x2="331.78097252255" y2="544.3825477437493" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<line x1="424.2391935725209" y1="366.8014320018339" x2="537.1450481544503" y2="500.0851962874866" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<line x1="424.2391935725209" y1="366.8014320018339" x2="355.880052329518" y2="294.229100423035" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<line x1="424.2391935725209" y1="366.8014320018339" x2="446.8520142996367" y2="517.4755780833898" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<line x1="424.2391935725209" y1="366.8014320018339" x2="440.6547633314575" y2="210.60907468048765" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<line x1="424.2391935725209" y1="366.8014320018339" x2="352.3486766386615" y2="424.14432815329496" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<line x1="537.1450481544503" y1="500.0851962874866" x2="446.8520142996367" y2="517.4755780833898" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<line x1="537.1450481544503" y1="500.0851962874866" x2="352.3486766386615" y2="424.14432815329496" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<line x1="355.880052329518" y1="294.229100423035" x2="352.3486766386615" y2="424.14432815329496" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<line x1="331.78097252255" y1="544.3825477437493" x2="537.1450481544503" y2="500.0851962874866" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<line x1="331.78097252255" y1="544.3825477437493" x2="446.8520142996367" y2="517.4755780833898" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<line x1="331.78097252255" y1="544.3825477437493" x2="262.2080244109748" y2="474.35918846584946" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<line x1="331.78097252255" y1="544.3825477437493" x2="352.3486766386615" y2="424.14432815329496" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<rect x="475.3908531092619" y="364.8083403871184" width="50.37276314791063" height="49.62999533416894" rx="5" ry="5" fill="#f7fcf0" opacity="0.6" stroke="#333" stroke-width="2" />
+<text x="500.5772346832172" y="398.62333805420286" font-size="14" text-anchor="middle" fill="#000" font-weight="bold">Austria</text>
+<rect x="385.2177161599205" y="325.79837148000587" width="78.04295482520081" height="82.0061210436561" rx="5" ry="5" fill="#e0f3db" opacity="0.6" stroke="#333" stroke-width="2" />
+<text x="424.2391935725209" y="375.8014320018339" font-size="14" text-anchor="middle" fill="#000" font-weight="bold">Belgium</text>
+<rect x="291.1891586709522" y="504.96573316508716" width="81.1836277031955" height="78.83362915732442" rx="5" ry="5" fill="#ccebc5" opacity="0.6" stroke="#333" stroke-width="2" />
+<text x="331.78097252255" y="553.3825477437493" font-size="14" text-anchor="middle" fill="#000" font-weight="bold">France</text>
+<rect x="493.9091743030325" y="463.0788897768681" width="86.4717477028355" height="74.01261302123703" rx="5" ry="5" fill="#a8ddb5" opacity="0.6" stroke="#333" stroke-width="2" />
+<text x="537.1450481544503" y="509.0851962874866" font-size="14" text-anchor="middle" fill="#000" font-weight="bold">Germany</text>
+<rect x="332.70450867031633" y="267.26101677457007" width="46.3510873184033" height="53.93616729692985" rx="5" ry="5" fill="#7bccc4" opacity="0.6" stroke="#333" stroke-width="2" />
+<text x="355.880052329518" y="303.229100423035" font-size="14" text-anchor="middle" fill="#000" font-weight="bold">Liechtenstein</text>
+<rect x="421.5568176717088" y="492.76732974702577" width="50.590393255855815" height="49.416496672728044" rx="5" ry="5" fill="#4eb3d3" opacity="0.6" stroke="#333" stroke-width="2" />
+<text x="446.8520142996367" y="526.4755780833898" font-size="14" text-anchor="middle" fill="#000" font-weight="bold">Luxembourg</text>
+<rect x="257.0680440336027" y="469.49535666795816" width="10.279960754744252" height="9.727663595782587" rx="5" ry="5" fill="#2b8cbe" opacity="0.6" stroke="#333" stroke-width="2" />
+<text x="262.2080244109748" y="483.35918846584946" font-size="14" text-anchor="middle" fill="#000" font-weight="bold">Monaco</text>
+<rect x="402.1766974808794" y="169.0269430262283" width="76.95613170115621" height="83.16426330851868" rx="5" ry="5" fill="#0868ac" opacity="0.6" stroke="#333" stroke-width="2" />
+<text x="440.6547633314575" y="219.60907468048765" font-size="14" text-anchor="middle" fill="#000" font-weight="bold">Netherlands</text>
+<rect x="347.4480249826065" y="419.0429657724142" width="9.801303312110008" height="10.202724761761488" rx="5" ry="5" fill="#084081" opacity="0.6" stroke="#333" stroke-width="2" />
+<text x="352.3486766386615" y="433.14432815329496" font-size="14" text-anchor="middle" fill="#000" font-weight="bold">Switzerland</text>
+</svg>

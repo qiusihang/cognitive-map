@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!--
+    ========================================================
+    REUSABLE BASE TYPES
+    ========================================================
+    A base type for structural elements (Node, District, Reference) that share
+    the common attributes: id, name, quantity, and size.
+    -->
+    <xs:complexType name="MapElementBaseType">
+        <xs:attribute name="id" type="xs:string" use="required"/>
+        <xs:attribute name="name" type="xs:string" use="required"/>
+        <xs:attribute name="quantity" type="xs:string" use="optional"/>
+        <xs:attribute name="size" type="xs:string" use="optional"/>
+        <xs:anyAttribute processContents="lax" namespace="##any"/>
+    </xs:complexType>
+
+    <!--
+    ========================================================
+    1 & 2. NODE and REFERENCE (Landmark) Elements
+    ========================================================
+    Both are defined using the common MapElementBaseType.
+    -->
+    <xs:element name="Node" type="MapElementBaseType"/>
+    <xs:element name="Reference" type="MapElementBaseType"/>
+
+    <!--
+    ========================================================
+    3. DISTRICT
+    ========================================================
+    A District is an extension of the base type and includes a sequence of
+    ChildElement(s) which can be other Nodes, References, or Districts (recursive).
+    -->
+    <xs:complexType name="DistrictType">
+        <xs:complexContent>
+            <xs:extension base="MapElementBaseType">
+                <xs:sequence>
+                    <xs:choice minOccurs="0" maxOccurs="unbounded">
+                        <xs:element ref="Node"/>
+                        <xs:element ref="District"/>
+                        <xs:element ref="Reference"/>
+                    </xs:choice>
+                </xs:sequence>
+                <xs:attribute name="districtType" type="xs:string" use="required" />
+                <xs:anyAttribute processContents="lax" namespace="##any"/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element name="District" type="DistrictType"/>
+
+
+    <!--
+    ========================================================
+    4. RELATION (RDF-like)
+    ========================================================
+    Defines a relation with attributes for type, subject ID, and object ID,
+    making it easily transformable into a Subject-Predicate-Object (SPO) triple.
+    -->
+    <xs:complexType name="RelationType">
+        <xs:attribute name="id" type="xs:string" use="required"/>
+        <xs:attribute name="relationType" type="xs:string" use="required"/>
+        <xs:attribute name="subjectId" type="xs:string" use="required"/>
+        <xs:attribute name="objectId" type="xs:string" use="required"/>
+        <xs:anyAttribute processContents="lax" namespace="##any"/>
+    </xs:complexType>
+    <xs:element name="Relation" type="RelationType" />
+
+
+    <!--
+    ========================================================
+    5. EDGE
+    ========================================================
+    Defines an Edge that separates two logical groups of elements.
+    An edge can be passable (gate, door, etc.) or not (wall, rive, mountain, etc.).
+    -->
+    <xs:complexType name="ElementGroupType">
+        <xs:sequence>
+            <!-- A group consists of one or more references to element IDs -->
+            <xs:element name="ElementId" type="xs:string" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="EdgeType">
+        <xs:sequence>
+            <xs:element name="GroupA" type="ElementGroupType"/>
+            <xs:element name="GroupB" type="ElementGroupType"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:string" use="required"/>
+        <xs:attribute name="name" type="xs:string" use="required"/>
+        <xs:attribute name="edgeType" type="xs:string" use="required"/>
+        <xs:attribute name="size" type="xs:string" use="optional"/>
+    </xs:complexType>
+    <xs:element name="Edge" type="EdgeType"/>
+
+
+    <!--
+    ========================================================
+    6. PATH (Sequence of Activities)
+    ========================================================
+    A Path defines an ordered sequence of Steps, where each step specifies an element
+    and an activity to be performed there.
+    -->
+    <xs:complexType name="PathStepType">
+        <xs:attribute name="elementId" type="xs:string" use="required"/>
+        <xs:attribute name="activity" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="PathType">
+        <xs:sequence>
+            <xs:element name="Step" type="PathStepType" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:string" use="required"/>
+        <xs:attribute name="name" type="xs:string" use="required"/>
+        <xs:attribute name="pathType" type="xs:string" use="required"/>
+        <xs:anyAttribute processContents="lax" namespace="##any"/>
+    </xs:complexType>
+    <xs:element name="Path" type="PathType"/>
+
+
+    <!--
+    ========================================================
+    ROOT ELEMENT: CognitiveMap
+    ========================================================
+    The main container for all the map's structural and relational elements.
+    -->
+    <xs:element name="CognitiveMap">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                    <xs:element ref="Node"/>
+                    <xs:element ref="District"/>
+                    <xs:element ref="Relation"/>
+                    <xs:element ref="Reference"/>
+                    <xs:element ref="Edge"/>
+                    <xs:element ref="Path"/>
+                </xs:choice>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

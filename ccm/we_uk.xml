@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CognitiveMap xsi:noNamespaceSchemaLocation="ccm.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<District id="Austria" name="Austria" size="small" districtType="open"/>
+<District id="Belgium" name="Belgium" size="small" districtType="open"/>
+<District id="France" name="France" size="large" districtType="open"/>
+<District id="Germany" name="Germany" size="medium" districtType="open"/>
+<District id="Liechtenstein" name="Liechtenstein" size="very small" districtType="open"/>
+<District id="Luxembourg" name="Luxembourg" size="very small" districtType="open"/>
+<District id="Monaco" name="Monaco" size="very small" districtType="open"/>
+<District id="Netherlands" name="Netherlands" size="small" districtType="open"/>
+<District id="Switzerland" name="Switzerland" size="small" districtType="open"/>
+<Relation id="R1" subjectId="Austria" objectId="France" relationType="east" weight="0.20"/>
+<Relation id="R2" subjectId="Austria" objectId="Germany" relationType="south" weight="0.20"/>
+<Relation id="R3" subjectId="Austria" objectId="Liechtenstein" relationType="west" weight="0.33"/>
+<Relation id="R4" subjectId="Austria" objectId="Luxembourg" relationType="north" weight="0.20"/>
+<Relation id="R5" subjectId="Austria" objectId="Switzerland" relationType="east" weight="0.20"/>
+<Relation id="R8" subjectId="France" objectId="Germany" relationType="north-west" weight="0.17"/>
+<Relation id="R9" subjectId="France" objectId="Luxembourg" relationType="east" weight="0.17"/>
+<Relation id="R10" subjectId="France" objectId="Monaco" relationType="north-west" weight="1.00"/>
+<Relation id="R11" subjectId="France" objectId="Netherlands" relationType="south" weight="0.25"/>
+<Relation id="R15" subjectId="Germany" objectId="Liechtenstein" relationType="north" weight="0.33"/>
+<Relation id="R16" subjectId="Germany" objectId="Luxembourg" relationType="south" weight="0.17"/>
+<Relation id="R17" subjectId="Germany" objectId="Netherlands" relationType="south-east" weight="0.25"/>
+<Relation id="R18" subjectId="Germany" objectId="Switzerland" relationType="north" weight="0.20"/>
+<Relation id="R21" subjectId="Liechtenstein" objectId="Switzerland" relationType="north-east" weight="0.33"/>
+<Relation id="R26" subjectId="Luxembourg" objectId="Netherlands" relationType="south" weight="0.25"/>
+<Relation id="R27" subjectId="Luxembourg" objectId="Switzerland" relationType="south-east" weight="0.20"/>
+<Relation id="R33" subjectId="Belgium" objectId="France" relationType="north-east" weight="0.20"/>
+<Relation id="R34" subjectId="Belgium" objectId="Germany" relationType="west" weight="0.20"/>
+<Relation id="R35" subjectId="Belgium" objectId="Luxembourg" relationType="south-east" weight="0.20"/>
+<Relation id="R36" subjectId="Belgium" objectId="Netherlands" relationType="south" weight="0.25"/>
+<Relation id="R37" subjectId="Belgium" objectId="Switzerland" relationType="east" weight="0.20"/>
+</CognitiveMap>

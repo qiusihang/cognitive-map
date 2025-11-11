@@ -1,0 +1,36 @@
+The 'Coffee Shop' area usually contain the following: 'Seating Area', 'Service Area', 'Customer Waiting Area'. 
+The 'Seating Area' area usually contain the following: 'Table', 'Chair'. 
+The 'Service Area' area usually contain the following: 'Counter', 'Back Storage'. 
+The 'Counter' area usually contain the following: 'Cash Register', 'Espresso Machine', 'Pastry Case', 'Mugs', 'Containers for Premade Coffee'. 
+The 'Back Storage' area usually contain the following: 'Coffee Machine'. 
+The 'Customer Waiting Area' area usually contain the following: 'Pickup Point', 'Menu Board'. 
+The relationship between 'Menu Board' (subject) and 'Pickup Point' (object) is 'separate'
+The relationship between 'Pickup Point' (subject) and 'Menu Board' (object) is 'separate'
+The relationship between 'Table' (subject) and 'Chair' (object) is 'near'
+The relationship between 'Service Area' (subject) and 'Customer Waiting Area' (object) is 'near'
+The relationship between 'Main Entrance Door' (subject) and 'Coffee Shop' (object) is 'near'
+The relationship between 'Seating Area' (subject) and 'Customer Waiting Area' (object) is 'near'
+The relationship between 'Espresso Machine' (subject) and 'Cash Register' (object) is 'near'
+The relationship between 'Espresso Machine' (subject) and 'Cash Register' (object) is 'functionalDependency'
+At the location 'Coffee Shop', it seems that 'Seating Area' and 'Service Area' don't have a fixed spatial relationship (random and inconsistent).
+At the location 'Service Area', it seems that 'Counter' and 'Back Storage' don't have a fixed spatial relationship (random and inconsistent).
+At the location 'Counter', it seems that 'Cash Register' and 'Pastry Case' don't have a fixed spatial relationship (random and inconsistent).
+At the location 'Counter', it seems that 'Cash Register' and 'Mugs' don't have a fixed spatial relationship (random and inconsistent).
+At the location 'Counter', it seems that 'Cash Register' and 'Containers for Premade Coffee' don't have a fixed spatial relationship (random and inconsistent).
+At the location 'Counter', it seems that 'Espresso Machine' and 'Pastry Case' don't have a fixed spatial relationship (random and inconsistent).
+At the location 'Counter', it seems that 'Espresso Machine' and 'Mugs' don't have a fixed spatial relationship (random and inconsistent).
+At the location 'Counter', it seems that 'Espresso Machine' and 'Containers for Premade Coffee' don't have a fixed spatial relationship (random and inconsistent).
+At the location 'Counter', it seems that 'Pastry Case' and 'Mugs' don't have a fixed spatial relationship (random and inconsistent).
+At the location 'Counter', it seems that 'Pastry Case' and 'Containers for Premade Coffee' don't have a fixed spatial relationship (random and inconsistent).
+At the location 'Counter', it seems that 'Mugs' and 'Containers for Premade Coffee' don't have a fixed spatial relationship (random and inconsistent).
+The 'Counter' separates 'Service Area' from 'Seating Area'.
+For the 'Counter' (which separates 'Service Area' from 'Seating Area') is 'passable'.
+The 'Counter Access' separates 'Counter' from 'Customer Waiting Area'.
+For the 'Counter Access' (which separates 'Counter' from 'Customer Waiting Area') is 'passable'.
+When you perform the activity 'Buy Coffee' as the 'Customer', after you 'Enter' at the 'Main Entrance Door', you usually 'Check Menu' at the 'Menu Board'.
+When you perform the activity 'Buy Coffee' as the 'Customer', after you 'Check Menu' at the 'Menu Board', you usually 'Order' at the 'Cash Register'.
+When you perform the activity 'Buy Coffee' as the 'Customer', after you 'Order' at the 'Cash Register', you usually 'Wait and Collect Coffee' at the 'Pickup Point'.
+When you perform the activity 'Make Coffee' as the 'Staff', after you 'Retrieve Coffee Beans' at the 'Containers for Premade Coffee', you usually 'Clean Equipment' at the 'Mugs'.
+When you perform the activity 'Make Coffee' as the 'Staff', after you 'Clean Equipment' at the 'Mugs', you usually 'Brew Espresso' at the 'Espresso Machine'.
+When you perform the activity 'Make Coffee' as the 'Staff', after you 'Brew Espresso' at the 'Espresso Machine', you usually 'Refill Coffee Reservoir' at the 'Coffee Machine'.
+When you perform the activity 'Make Coffee' as the 'Staff', after you 'Refill Coffee Reservoir' at the 'Coffee Machine', you usually 'Serve Drinks' at the 'Counter'.

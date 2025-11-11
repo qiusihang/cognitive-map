@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CognitiveMap xsi:noNamespaceSchemaLocation="ccm.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    
+    <District id="D001" name="Coffee Shop" districtType="open" size="huge">
+
+        <District id="D100" name="Seating Area" districtType="open" size="huge">
+            <Node id="N101" name="Table"/>
+            <Node id="N102" name="Chair"/>
+        </District>
+
+        <District id="D200" name="Service Area" districtType="open" size="large">
+            <District id="D210" name="Counter" districtType="open" size="huge">
+                <Node id="N211" name="Espresso Machine" />
+                <Node id="N212" name="Cash Register"/>
+            </District>
+            <Node id="N201" name="Pastry Case"/>
+        </District>
+
+        <District id="D300" name="Customer Waiting Area" districtType="open" size="medium">
+            <Node id="N301" name="Menu Board"/>
+            <Node id="N302" name="Pickup Point"/>
+        </District>
+
+    </District>
+
+    <Node id="N001" name="Main Entrance Door"/>
+    
+    <Relation id="R01" relationType="near" subjectId="N101" objectId="N102"/>
+    <Relation id="R02" relationType="near" subjectId="D200" objectId="D300"/>
+    <Relation id="R03" relationType="near" subjectId="N001" objectId="D001"/>
+
+    <Edge id="E01" name="Counter" edgeType="impassable">
+        <GroupA>
+            <ElementId>D200</ElementId>
+        </GroupA>
+        <GroupB>
+            <ElementId>D100</ElementId>
+            <ElementId>D300</ElementId>
+        </GroupB>
+    </Edge>
+
+    <Path id="P01" name="Buy Coffee" pathType="activity" subject="Customer">
+        <Step elementId="N001" activity="Enter"/>
+        <Step elementId="N301" activity="Check Menu"/>
+        <Step elementId="N212" activity="Order"/>
+        <Step elementId="N302" activity="Wait"/>
+        <Step elementId="D100" activity="Sit"/>
+    </Path>
+
+    <Path id="P02" name="Make Coffee" pathType="activity" subject="Staff">
+        <Step elementId="N211" activity="Make Espresso"/>
+        <Step elementId="D210" activity="Combine Ingredients"/>
+        <Step elementId="N302" activity="Provide Final Drink"/>
+    </Path>
+
+</CognitiveMap>

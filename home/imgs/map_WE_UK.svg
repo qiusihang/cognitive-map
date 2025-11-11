@@ -1,0 +1,44 @@
+<svg width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" style="border: 1px solid #ccc; font-family: Inter, sans-serif;">
+<!-- Background -->
+<rect width="800" height="800" fill="#f0f4f8" />
+<line x1="463.21767867767375" y1="433.4228726672906" x2="260.85770427180586" y2="402.20890398569196" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<line x1="463.21767867767375" y1="433.4228726672906" x2="477.99618346010413" y2="321.8932278520476" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<line x1="463.21767867767375" y1="433.4228726672906" x2="554.5065699272461" y2="405.05837568370544" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<line x1="463.21767867767375" y1="433.4228726672906" x2="325.7166552018577" y2="328.0055974732809" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<line x1="463.21767867767375" y1="433.4228726672906" x2="382.23613824755085" y2="410.758285496519" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<line x1="260.85770427180586" y1="402.20890398569196" x2="477.99618346010413" y2="321.8932278520476" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<line x1="260.85770427180586" y1="402.20890398569196" x2="325.7166552018577" y2="328.0055974732809" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<line x1="260.85770427180586" y1="402.20890398569196" x2="328.66871101588794" y2="535.293204455646" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<line x1="260.85770427180586" y1="402.20890398569196" x2="315.919056624677" y2="194.9976549525344" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<line x1="477.99618346010413" y1="321.8932278520476" x2="554.5065699272461" y2="405.05837568370544" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<line x1="477.99618346010413" y1="321.8932278520476" x2="325.7166552018577" y2="328.0055974732809" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<line x1="477.99618346010413" y1="321.8932278520476" x2="315.919056624677" y2="194.9976549525344" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<line x1="477.99618346010413" y1="321.8932278520476" x2="382.23613824755085" y2="410.758285496519" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<line x1="554.5065699272461" y1="405.05837568370544" x2="382.23613824755085" y2="410.758285496519" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<line x1="325.7166552018577" y1="328.0055974732809" x2="315.919056624677" y2="194.9976549525344" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<line x1="325.7166552018577" y1="328.0055974732809" x2="382.23613824755085" y2="410.758285496519" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<line x1="395.3604479364119" y1="277.12207315368516" x2="260.85770427180586" y2="402.20890398569196" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<line x1="395.3604479364119" y1="277.12207315368516" x2="477.99618346010413" y2="321.8932278520476" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<line x1="395.3604479364119" y1="277.12207315368516" x2="325.7166552018577" y2="328.0055974732809" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<line x1="395.3604479364119" y1="277.12207315368516" x2="315.919056624677" y2="194.9976549525344" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<line x1="395.3604479364119" y1="277.12207315368516" x2="382.23613824755085" y2="410.758285496519" stroke="#ff9800" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="4 2" />
+<rect x="437.8543722708803" y="408.78097503865195" width="50.72661281358694" height="49.28379525727735" rx="5" ry="5" fill="#f7fcf0" opacity="0.6" stroke="#333" stroke-width="2" />
+<text x="463.21767867767375" y="442.4228726672906" font-size="14" text-anchor="middle" fill="#000" font-weight="bold">Austria</text>
+<rect x="371.8358550114592" y="250.55413202102238" width="47.04918584990537" height="53.13588226532562" rx="5" ry="5" fill="#e0f3db" opacity="0.6" stroke="#333" stroke-width="2" />
+<text x="395.3604479364119" y="286.12207315368516" font-size="14" text-anchor="middle" fill="#000" font-weight="bold">Belgium</text>
+<rect x="212.41908953922737" y="350.5971885433309" width="96.877229465157" height="103.22343088472212" rx="5" ry="5" fill="#ccebc5" opacity="0.6" stroke="#333" stroke-width="2" />
+<text x="260.85770427180586" y="411.20890398569196" font-size="14" text-anchor="middle" fill="#000" font-weight="bold">France</text>
+<rect x="435.7469763539441" y="284.0226946612196" width="84.49841421232009" height="75.74106638165597" rx="5" ry="5" fill="#a8ddb5" opacity="0.6" stroke="#333" stroke-width="2" />
+<text x="477.99618346010413" y="330.8932278520476" font-size="14" text-anchor="middle" fill="#000" font-weight="bold">Germany</text>
+<rect x="549.6667313267834" y="399.89291417480104" width="9.679677200925425" height="10.3309230178088" rx="5" ry="5" fill="#7bccc4" opacity="0.6" stroke="#333" stroke-width="2" />
+<text x="554.5065699272461" y="414.05837568370544" font-size="14" text-anchor="middle" fill="#000" font-weight="bold">Liechtenstein</text>
+<rect x="320.44657888198253" y="323.26183315515954" width="10.540152639750318" height="9.4875286362427" rx="5" ry="5" fill="#4eb3d3" opacity="0.6" stroke="#333" stroke-width="2" />
+<text x="325.7166552018577" y="337.0055974732809" font-size="14" text-anchor="middle" fill="#000" font-weight="bold">Luxembourg</text>
+<rect x="323.737671730681" y="530.223279323433" width="9.862078570413928" height="10.139850264425831" rx="5" ry="5" fill="#2b8cbe" opacity="0.6" stroke="#333" stroke-width="2" />
+<text x="328.66871101588794" y="544.293204455646" font-size="14" text-anchor="middle" fill="#000" font-weight="bold">Monaco</text>
+<rect x="291.99559728964795" y="168.87267063286004" width="47.84691867005813" height="52.24996863934871" rx="5" ry="5" fill="#0868ac" opacity="0.6" stroke="#333" stroke-width="2" />
+<text x="315.919056624677" y="203.9976549525344" font-size="14" text-anchor="middle" fill="#000" font-weight="bold">Netherlands</text>
+<rect x="356.1851192555647" y="386.76690150527236" width="52.10203798397231" height="47.98276798249333" rx="5" ry="5" fill="#084081" opacity="0.6" stroke="#333" stroke-width="2" />
+<line x1="382.23613824755085" y1="415.758285496519" x2="382.23613824755085" y2="373.758285496519" stroke="#666" stroke-width="1" stroke-dasharray="2 2" opacity="0.6" />
+<text x="382.23613824755085" y="377.758285496519" font-size="14" text-anchor="middle" fill="#000" font-weight="bold">Switzerland</text>
+</svg>

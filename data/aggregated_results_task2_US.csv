@@ -1,0 +1,46 @@
+qid,P0,P1,P2
+0,Large,Very small,Small
+1,Large,Unknown,Small
+2,Large,Medium,Large
+3,Large,Medium,Medium
+4,Small,Unknown,Small
+5,Small,Medium,Small
+6,Very small,Small,Very small
+7,Large,Large,Small
+8,Very small,Medium,Very small
+9,East,No,North-West
+10,Unknown,No,No
+11,South-East,Unknown,No
+12,No,East,South-East
+13,No,Unknown,North-West
+14,No,Unknown,No
+15,No,No,No
+16,Unknown,South,South-East
+17,North,Unknown,North
+18,South-East,North,West
+19,Unknown,Unknown,South
+20,North,No,Unknown
+21,No,No,No
+22,South,No,South-East
+23,East,North-East,No
+24,North-West,North-West,North-East
+25,No,No,No
+26,No,North-East,South-West
+27,Unknown,North-East,South-West
+28,Unknown,Unknown,No
+29,North-East,Unknown,No
+30,No,North,No
+31,North-East,Unknown,East
+32,No,No,North
+33,South-East,No,No
+34,West,East,East
+35,No,Unknown,No
+36,Unknown,No,No
+37,Unknown,Unknown,No
+38,Unknown,Unknown,North
+39,North,No,No
+40,No,Unknown,No
+41,Unknown,No,No
+42,No,No,No
+43,No,No,No
+44,No,South-West,No

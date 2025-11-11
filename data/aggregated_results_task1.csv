@@ -1,0 +1,43 @@
+qid,P0,P1,P2,P3,P4,P5,P6,P7,P8,P9
+I_0,Yes,Yes,Other,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+I_0_why,,,toilets,,,,,,,
+I_1,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+I_1_why,"It does not contain the words Table and Chair but it does relate to ""a seating area""",,,,,,,,,
+I_2,Yes,Yes,Yes,Other,Other,Yes,Yes,Yes,Yes,Yes
+I_2_why,,,,also has other items for sale,"It contains cakes, muffins, biscuits, and sometimes savoury items",,,,,
+I_3,Other,Yes,No,Yes,No,Yes,Yes,Yes,Other,No
+I_3_why,"It also contains mugs, sandwiches, pastries and possibly other goodies",,Usually behind the counter,,the espresso machine is usually towards the back of the counter area and not actually in the counter area,,,,"There should also be a coffee machine, and also containers that hold premade coffee that others can push to pour coffee into cups.",it would get in the way and the customer doesnt need to have access to touching either machine
+I_4,Yes,Yes,Yes,Yes,No,Yes,Yes,Other,Yes,Yes
+I_4_why,,,,,Because I can't see it,,,It usually contains pick up point and some items like sugar and creamer for coffee,,
+II_0,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+II_0_why,,,,,,,,,,
+II_1,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes
+II_1_why,,,,,,No,,,,
+II_2,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+II_2_why,,,,,,,,,,
+II_3,Yes,Other,Yes,Yes,No,Yes,Other,No,No,Yes
+II_3_why,,it seems like some are spread out and some aren't,,,no,,Seating Area is where customers reside. Service Area is where the employees make the coffee,They are separated by a counter.,Because in the seating area of the coffee shop there is a service area and you are able to be served.,
+II_4,Yes,Other,Yes,Yes,Other,No,Other,Other,Yes,Yes
+II_4_why,,"Normally the seating area to drink in wouldn't be the same as the waiting area, but a smaller coffee shop might not have a dedicated waiting area.",,,The waiting area is normally right next to the seating area but it really depends what coffee shop you go to. Most are near each other but likely leave people milling around and waiting without any general idea of where they should actually be waiting so it gets busy,I feel that they are similar because when you wait to receive your order you're technically waiting in the area where you sit down ,"The customer waiting area is likely going to be near the seating area. I would say it's almost always the case that you can see the seating area when you're in the customer waiting area, especially in a coffee shop as opposed to a restaurant.","They don't have a specific set of configuration, but they tend to be next to one another. ",,
+II_5,Other,No,Yes,No,Yes,Yes,No,No,No,No
+II_5_why,"They will often be near each other, but the pastry case will sometimes be on top of the counter, and will sometimes be next to the counter. ",They are always in the same place,,all areas need to have a relationship,,,They would typically be next to one another or very close so that the worker at the counter can reach the pastries and serve the customer.,They are always directly next to each other so the customer can easily point out the pastries they want,No,"The counter and pastry case do not move around, they are fixed in place"
+II_6,No,No,No,Yes,Other,Other,Yes,No,Other,Yes
+II_6_why,"I'm not sure exactly what the question is, but at a specific coffee shop, they do have a fixed relationship.",The machines are not far from the cash register,If the epresso machine doesn't work then no cash wiill be placed in the cash register,,The distance between the Espresso Machine and the Cash Register varies depending on the store.,They have their own dedicated space. ,,The two are usually in a fixed spot on the counter.,in some small shops that dont have room for a set pickup counter space with no other shop items there they might have to hand customers drinks where the cash register is so that wouldnt be fixed for ALL shops,
+II_7,Yes,Yes,No,No,No,Yes,Yes,No,No,Yes
+II_7_why,,,They both have fixed positions so the positioning is consistent,no,the space for the menu board should precede the pickup point to allow the natural flow of customers through the coffee shop,,,The pickup point is usually very separate from the menu board,THEY HAVE FIXED POINTS.,
+II_8,Other,Yes,Yes,Other,Yes,Yes,Yes,No,Yes,Yes
+II_8_why,the service area would most probably be behind  counter.  the customer waiting area would most probably be the other side of it and the seating would be separate again,,,This sentence makes no sense ,,,,Counter separate employees from customer area,,
+II_9,Other,Yes,Yes,Yes,No,No,Yes,Yes,Yes,Yes
+II_9_why,There is normally a gap at the side of the counter which will allow staff to access the seating area and customer waiting area.,,,,they are all connected,You have to walk around the side to get to the service area ,,,,
+III_0,Other,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+III_0_why,"If you're a regular, you wouldn't need to check.",,,,,,,,,
+III_1,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Other
+III_1_why,,,,no,,,,,,Sometimes I'll order at the drive-through.
+III_2,Other,Yes,Other,Yes,Other,Yes,Yes,Yes,Yes,Yes
+III_2_why,partailly correct as some establishments may bring the coffe to a table and some one would wait at a pickup point,,Sometomes the server at the counter make your coffee quickly. So no need to wait  in a seperate area,,I wait in the shop but only go to the pickup point when my coffee is ready for collection,,,,,
+III_3,Other,No,Yes,Yes,Yes,Yes,Yes,Yes,Other,Other
+III_3_why,Sometimes customers will leave immediately,"Usually stand and wait, it is only usually a short time",,,,,,,"It would depend if ""Buy Coffee"" meant that you received the coffee.",what if I want it to go? so I might sit or I might just leave
+III_4,Yes,No,Yes,Yes,No,Yes,Yes,Yes,No,Yes
+III_4_why,,You don't do it at the counter - you do it at the machine,,,Espresso doesn't involve combining ingredients,,,,I would combine ingredients before making the espresso,
+III_5,Yes,Other,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes
+III_5_why,,Bit confused by the question,,no,,,,,,

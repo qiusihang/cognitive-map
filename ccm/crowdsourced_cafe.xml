@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CognitiveMap xsi:noNamespaceSchemaLocation="ccm.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    
+    <District id="D001" name="Coffee Shop" districtType="open" size="huge">
+
+        <District id="D100" name="Seating Area" districtType="open" size="huge" tip="Optional waiting area for customers. Some customers may sit here while waiting, while others prefer to stand at the pickup point.">
+            <Node id="N101" name="Table"/>
+            <Node id="N102" name="Chair"/>
+        </District>
+
+        <District id="D200" name="Service Area" districtType="open" size="large">
+            <District id="D210" name="Counter" districtType="open" size="huge">
+                <Node id="N212" name="Cash Register"/>
+                <Node id="N211" name="Espresso Machine"/>  <!-- Moved to Counter -->
+                <Node id="N201" name="Pastry Case"/>
+                <Node id="N202" name="Mugs"/>
+                <Node id="N213" name="Containers for Premade Coffee"/>
+            </District>
+            <District id="D211" name="Back Storage" districtType="open" size="medium">
+                <Node id="N214" name="Coffee Machine"/>
+            </District>
+        </District>
+
+        <District id="D300" name="Customer Waiting Area" districtType="open" size="medium" tip="Customers wait here after ordering until their drink is ready. Some stand here briefly while waiting, while others may sit in the Seating Area.">
+            <!-- Changed position: pickup point placed after menu board -->
+            <Node id="N302" name="Pickup Point"/>
+            <Node id="N301" name="Menu Board"/>
+        </District>
+
+    </District>
+
+    <Node id="N001" name="Main Entrance Door"/>
+    
+    <!-- Added separation edges -->
+    <Relation id="R07" relationType="separate" subjectId="N301" objectId="N302"/>
+    <Relation id="R08" relationType="separate" subjectId="N302" objectId="N301"/>
+
+    <Relation id="R01" relationType="near" subjectId="N101" objectId="N102"/>
+    <Relation id="R02" relationType="near" subjectId="D200" objectId="D300"/>
+    <Relation id="R03" relationType="near" subjectId="N001" objectId="D001"/>
+    <Relation id="R04" relationType="near" subjectId="D100" objectId="D300"/>
+    <Relation id="R05" relationType="near" subjectId="N211" objectId="N212"/>  <!-- Added proximity -->
+    <Relation id="R06" relationType="functionalDependency" subjectId="N211" objectId="N212"/>  <!-- Added functional dependency -->
+
+    <Edge id="E01" name="Counter" edgeType="passable">
+        <GroupA>
+            <ElementId>D200</ElementId>
+        </GroupA>
+        <GroupB>
+            <ElementId>D100</ElementId>
+        </GroupB>
+    </Edge>
+
+    <!-- ADDED NEW EDGE TO ADDRESS FEEDBACK -->
+    <Edge id="E02" name="Counter Access" edgeType="passable"> <!-- Changed to passable -->
+        <GroupA>
+            <ElementId>D210</ElementId> <!-- Now connects to waiting area -->
+        </GroupA>
+        <GroupB>
+            <ElementId>D300</ElementId> <!-- Added connection to waiting area -->
+        </GroupB>
+    </Edge>
+
+    <Path id="P01" name="Buy Coffee" pathType="activity" subject="Customer">
+        <Step elementId="N001" activity="Enter"/>
+        <Step elementId="N301" activity="Check Menu"/>
+        <Step elementId="N212" activity="Order"/>
+        <Step elementId="N302" activity="Wait and Collect Coffee"/>  <!-- Updated to reflect standing/waiting behavior -->
+    </Path>
+
+    <Path id="P02" name="Make Coffee" pathType="activity" subject="Staff">
+        <!-- Added preparatory steps using existing nodes -->
+        <Step elementId="N213" activity="Retrieve Coffee Beans"/>
+        <Step elementId="N202" activity="Clean Equipment"/>
+        <!-- Updated to reflect new location and activity -->
+        <Step elementId="N211" activity="Brew Espresso"/>
+        <Step elementId="N214" activity="Refill Coffee Reservoir"/>
+        <Step elementId="D210" activity="Serve Drinks"/>
+    </Path>
+
+</CognitiveMap>
